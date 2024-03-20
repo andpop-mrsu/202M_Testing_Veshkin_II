@@ -1,0 +1,451 @@
+{
+  "id": "82a91830-6ada-40f5-bc3e-47ad82ef8b6c",
+  "version": "2.0",
+  "name": "Meeting_System_by_IgorVeshkin",
+  "url": "https://igorveshkin.pythonanywhere.com/show_users_list/",
+  "tests": [{
+    "id": "298efc1e-557a-4eb0-b621-68e6324cf59e",
+    "name": "User_Search",
+    "commands": [{
+      "id": "a692e096-5974-4b28-a82e-0257c2802776",
+      "comment": "",
+      "command": "open",
+      "target": "https://igorveshkin.pythonanywhere.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3babe332-a120-4fe3-8890-3f79cba4461a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Список пользователей",
+      "targets": [
+        ["linkText=Список пользователей", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Список пользователей')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavDropdown']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/show_users_list/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Список пользователей')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "725caf44-9249-40dc-bab4-701163c67ec7",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-nickname-field",
+      "targets": [
+        ["id=search-nickname-field", "id"],
+        ["css=#search-nickname-field", "css:finder"],
+        ["xpath=//input[@id='search-nickname-field']", "xpath:attributes"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98e98821-2e2c-4f49-828b-5f183c884142",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-nickname-field",
+      "targets": [
+        ["id=search-nickname-field", "id"],
+        ["css=#search-nickname-field", "css:finder"],
+        ["xpath=//input[@id='search-nickname-field']", "xpath:attributes"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "ig"
+    }, {
+      "id": "c73fb991-1e90-4faf-a404-8e17b714da39",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-user-button",
+      "targets": [
+        ["id=search-user-button", "id"],
+        ["css=#search-user-button", "css:finder"],
+        ["xpath=//button[@id='search-user-button']", "xpath:attributes"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50585fb1-f42e-4bf6-88de-35d9313e0f8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-search-role-select",
+      "targets": [
+        ["id=user-search-role-select", "id"],
+        ["css=#user-search-role-select", "css:finder"],
+        ["xpath=//select[@id='user-search-role-select']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ce5e518-e168-40fd-a821-ce52f25a5af4",
+      "comment": "",
+      "command": "select",
+      "target": "id=user-search-role-select",
+      "targets": [],
+      "value": "label=User"
+    }, {
+      "id": "81cba88e-2aa8-4c71-90c6-cc26f390142d",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-user-button",
+      "targets": [
+        ["id=search-user-button", "id"],
+        ["css=#search-user-button", "css:finder"],
+        ["xpath=//button[@id='search-user-button']", "xpath:attributes"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1017ba36-48a1-4c8b-ac6a-391803d978a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c088098-8846-49d2-bfe3-30d31235e8ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-nickname-field",
+      "targets": [
+        ["id=search-nickname-field", "id"],
+        ["css=#search-nickname-field", "css:finder"],
+        ["xpath=//input[@id='search-nickname-field']", "xpath:attributes"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29e70c29-47d0-4e23-84b0-60b95d685106",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-user-button",
+      "targets": [
+        ["id=search-user-button", "id"],
+        ["css=#search-user-button", "css:finder"],
+        ["xpath=//button[@id='search-user-button']", "xpath:attributes"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a436a84-dfa6-46f4-afce-3a0a922c1979",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-search-role-select",
+      "targets": [
+        ["id=user-search-role-select", "id"],
+        ["css=#user-search-role-select", "css:finder"],
+        ["xpath=//select[@id='user-search-role-select']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b5746c0-e976-41ce-b707-db95b31419dd",
+      "comment": "",
+      "command": "select",
+      "target": "id=user-search-role-select",
+      "targets": [],
+      "value": "label=All"
+    }, {
+      "id": "0a4f5c22-b3f8-47aa-ad4f-d045c435a6d8",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-user-button",
+      "targets": [
+        ["id=search-user-button", "id"],
+        ["css=#search-user-button", "css:finder"],
+        ["xpath=//button[@id='search-user-button']", "xpath:attributes"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Поиск')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58b30e5b-66cb-4e42-b90a-e4205972e41e",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-id-field",
+      "targets": [
+        ["id=search-id-field", "id"],
+        ["css=#search-id-field", "css:finder"],
+        ["xpath=//input[@id='search-id-field']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4d7fd181-45cf-401c-930d-5b9b934bf97f",
+    "name": "Log In Meeting_System",
+    "commands": [{
+      "id": "39c5538f-d3f0-4455-b172-cdd5871d9457",
+      "comment": "",
+      "command": "open",
+      "target": "https://igorveshkin.pythonanywhere.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb26afe5-a674-481d-beca-60b55ba926c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=div:nth-child(1) > .text-decoration-none:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/login/')])[2]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "343494dd-df7a-4491-8e8f-94bad12c735d",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_Username",
+      "targets": [
+        ["id=id_Username", "id"],
+        ["name=Username", "name"],
+        ["css=#id_Username", "css:finder"],
+        ["xpath=//input[@id='id_Username']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "IgorAdmin"
+    }, {
+      "id": "c091d225-a4f1-46af-a6b8-21f61f4b3837",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_Password",
+      "targets": [
+        ["id=id_Password", "id"],
+        ["name=Password", "name"],
+        ["css=#id_Password", "css:finder"],
+        ["xpath=//input[@id='id_Password']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "Admin_Meeting_System_01"
+    }, {
+      "id": "ac294aab-d03c-429a-805e-f0cbf1a08911",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-100",
+      "targets": [
+        ["css=.h-100", "css:finder"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aba755b1-bac8-4e21-b586-513bb0976d22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h-100",
+      "targets": [
+        ["css=.h-100", "css:finder"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2a069dd-100e-42e6-9ac1-90c6a079deda",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_Password",
+      "targets": [
+        ["id=id_Password", "id"],
+        ["name=Password", "name"],
+        ["css=#id_Password", "css:finder"],
+        ["xpath=//input[@id='id_Password']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abb16c64-d2a0-4fa1-ba39-00bb9255df45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7823f810-fb0b-4fbe-b575-ae68b7e1fe82",
+    "name": "UserList_Actions",
+    "commands": [{
+      "id": "07f4bfa3-1994-4fc4-93e7-a2f1631de334",
+      "comment": "",
+      "command": "open",
+      "target": "https://igorveshkin.pythonanywhere.com/show_users_list/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5f1cf00-9003-4402-bd70-75932b84b3e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .bi-calendar-event",
+      "targets": [
+        ["css=tr:nth-child(1) .bi-calendar-event", "css:finder"],
+        ["xpath=//tbody[@id='user-table-body']/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/profile/2')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13b9cc1b-283c-4575-b2d4-6550d0663002",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Список пользователей",
+      "targets": [
+        ["linkText=Список пользователей", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Список пользователей')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavDropdown']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/show_users_list/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Список пользователей')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b4a9bfa-654c-4534-b196-e1f130e1c617",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .bi-chat-dots",
+      "targets": [
+        ["css=tr:nth-child(1) .bi-chat-dots", "css:finder"],
+        ["xpath=//tbody[@id='user-table-body']/tr/td[3]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/create_chat/2')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2817f42-4d0b-48b2-b8e0-234d5cf529c1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Список пользователей",
+      "targets": [
+        ["linkText=Список пользователей", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Список пользователей')]", "xpath:link"],
+        ["xpath=//div[@id='navbarNavDropdown']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/show_users_list/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Список пользователей')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7705a8c-82c4-42e4-8106-044a3a07ded7",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .bi-person-fill-slash",
+      "targets": [
+        ["css=tr:nth-child(1) .bi-person-fill-slash", "css:finder"],
+        ["xpath=//tbody[@id='user-table-body']/tr/td[3]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ban_user/2')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f6d4b1d-c2b0-4dbd-8c8a-52c10ab00642",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bi-person-check-fill",
+      "targets": [
+        ["css=.bi-person-check-fill", "css:finder"],
+        ["xpath=//tbody[@id='user-table-body']/tr/td[3]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/unban_user/2')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1fe7f520-61b8-43bd-9749-f403953ffe8f",
+    "name": "UserProfile_Change_Data",
+    "commands": [{
+      "id": "25dc1d72-a0d2-40f3-a83c-138c7cb80838",
+      "comment": "",
+      "command": "open",
+      "target": "https://igorveshkin.pythonanywhere.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d661193-cafc-4867-9652-fb3bbee83af6",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbarDropdownMenuLink1",
+      "targets": [
+        ["id=navbarDropdownMenuLink1", "id"],
+        ["linkText=IgorAdmin | Admin", "linkText"],
+        ["css=#navbarDropdownMenuLink1", "css:finder"],
+        ["xpath=(//a[contains(text(),'IgorAdmin | Admin')])[2]", "xpath:link"],
+        ["xpath=//a[@id='navbarDropdownMenuLink1']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b15ffbd-6e20-49ca-96a0-30e81c94c518",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Настройки профиля",
+      "targets": [
+        ["linkText=Настройки профиля", "linkText"],
+        ["css=.show > li:nth-child(2) > .dropdown-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'Настройки профиля')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/profile-settings/4')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a338db3b-0813-4b64-8a0a-82de070e712c",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ceb5da5-cf52-40cf-85fc-9fa0ea354b17",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "IgorAdmin1"
+    }, {
+      "id": "927046a8-1694-405c-b005-d877c49096d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@value='Сохранить изменения']", "xpath:attributes"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9fa43e65-0361-442a-9c61-fc5da41a78c6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["298efc1e-557a-4eb0-b621-68e6324cf59e"]
+  }],
+  "urls": ["https://igorveshkin.pythonanywhere.com/show_users_list/"],
+  "plugins": []
+}
